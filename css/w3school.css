@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    border-left: 1px solid #efefef;
+    border-right: 1px solid #aaa;
+    margin: 0 auto;
+    width: 1100px;
+    font-family:Verdana, Arial, '宋体';
+    font-size: 12px;
+    padding: 0 12px 12px 12px;
+    box-shadow: 3px 0 4px #aaa;
+}
+
+
+h2 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none
+}
+
+
+    /*------------------------header---------------------------*/
+#header {
+    background-color: #efefef;
+    height: 90px;
+    overflow: hidden;
+}
+
+#header a{
+    display: block;
+    font-size: 74px;
+    padding: 16px 0 0 4px;
+    background-color: darkgray;
+    color: white;
+
+}
+
+#header a:hover{
+    background-color: #cccccc;
+}
+
+
+
+
+    /*------------------------navfirst---------------------------*/
+#navfirst {
+    height: 55px;
+    width: 1100px;
+    margin: 0 0 10px 12px;
+}
+
+#navfirst li{
+    float: left;
+
+}
+
+#navfirst a:link, #navfirst a:visited {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0 0 46px;
+    color: dimgray;
+}
+
+#navfirst a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+    /*-------------------------navsecond----------------------------*/
+#navsecond {
+    float: left;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    width: 180px;
+    background-color: #efefef;
+}
+
+#navsecond h2, #sidebar h2 {
+    font-size: 14px;
+    font-weight: 900;
+
+    margin: 6px 0 0 12px;
+}
+
+#navsecond ul, #sidebar ul{
+    margin-left: 12px;
+}
+
+#navsecond li{
+    font-weight: 500;
+
+}
+
+#navsecond a, #sidebar a{
+    font-size: 12px;
+}
+
+#navsecond a:hover{
+    text-decoration: underline;
+
+}
+
+#about, #help{
+    font-weight: bold;
+    color: #0479a7;
+}
+
+    /*--------------------------maincount------------------------------------*/
+#maincontent {
+    float: left;
+    margin-left: 20px;
+    width: 680px;
+    font-family: '微软雅黑';
+}
+
+
+#maincontent p {
+    margin: 14px 0 14px 0;
+
+    line-height: 150%;
+}
+
+#maincontent img {
+    float: left;
+    transform: scale(1);
+}
+
+.idea {
+    height: 118px;
+}
+
+#maincontent div {
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+#w3 {
+    padding: 22px 0 10px;
+    text-align: center;
+}
+
+#w3 b, #maincontent h3 {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+#w3 h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#maincontent a {
+    color: darkred;
+    text-decoration: underline;
+}
+
+#maincontent a:hover {
+    color: red;
+}
+
+#partner a {
+    color: #0479a7;
+}
+
+#partner a:hover {
+    color: blue;
+}
+    /*--------------------------sidebar-----------------------------------*/
+#sidebar {
+    padding: 16px 0 10px 0;
+    float: right;
+    width: 180px;
+    background-color: #efefef;
+}
+
+#sidebar h2 {
+    margin-top: 13px;
+}
+
+#search p{
+    margin-left: 6px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#sidebar a {
+    color: darkred;
+    text-decoration: underline;
+}
+
+#sidebar a:hover {
+    color: crimson;
+}
+
+.box {
+    height: 18px;
+    width: 130px;
+    margin: 4px 0 4px;
+}
+
+.button {
+    height: 18px;
+    width: 24px;
+    color: white;
+    background-color: darkred;
+    font-size: 14px;
+}
+
+
+/*----------------------------footer----------------------------*/
+#footer {
+    clear: both;
+    padding: 4px 0;
+    width: 1100px;
+    background-color: darkgrey;
+}
+
+#footer p{
+    margin: 5px 12px 0 0;
+    padding: 0 0 0 10px;
+}
