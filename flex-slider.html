@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="framework/css/flexslider.css">
+  <link rel="stylesheet" href="css/flex-slider.css">
+  <script src="framework/js/jquery-3.1.1.min.js"></script>
+  <script src="framework/js/jquery.flexslider.js"></script>
+  <title>flexslider轮播图</title>
+  <script>
+    $(document).ready(function () {
+      $(".flexslider").flexslider({
+        animation:'slide',
+        slideshowSpeed:4000,
+      });
+    });
+  </script>
+</head>
+<body>
+<header>
+  <div id="logo">
+    <h1>
+      <a href="#" title="返回主页">helloweb</a>
+    </h1>
+  </div>
+</header>
+<div id="main">
+  <h2>flexslider图片轮播、文字图片相结合滑动切换效果</h2>
+  <div class="flexslider">
+    <ul class="slides">
+      <li><img src="img/flexslider/s1.jpg" />
+        <div id="slide-1">
+          <h4>FlexSlider!</h4>
+          <p>多功能图片切换效果</p>
+        </div>
+      </li>
+      <li><img src="img/flexslider/s2.jpg" />
+        <div id="slide-2">
+          <h4>jquery flexslider滑块幻灯片插件图片和文字结合焦点图片切换</h4>
+        </div>
+      </li>
+      <li><img src="img/flexslider/s3.jpg" />
+        <div id="slide-3">
+          <h4>FlexSlider</h4>
+          <p>FlexSlider是一款基于jQuery内容滚动插件。它能让你轻松的创建内容滚动的效果，
+            具有非常高的可定制性。它是将UL列表转换成内容滚动的列表，可以自动播放，或使用导航
+            按钮和键盘来控制。<a href="http://www.woothemes.com/flexslider/"
+            target="_blank">FlexSlider官网</a></p>
+        </div>
+      </li>
+      <li><img src="img/flexslider/s4.jpg" />
+        <div id="slide-4">
+          <h4>FlexSlider</h4>
+          <p>FlexSlider is a free responsive jQuery slider toolkit.
+            Supported in all major browsers with custom navigation options and touch swipe support.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  Powered by flexslider.<a href="https://github.com/lushuhao" target="_blank">源码下载</a>
+</footer>
+</body>
+</html>
