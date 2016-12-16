@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding:0;}
+
+body{
+    font: 12px/1.5 微软雅黑,tahoma,arial,Hiragino Sans GB,\\5b8b体,sans-serif;
+    color: #666;
+    background-color: #f6f6f6;
+}
+
+nav{
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 1190px;
+}
+
+.J_cate{
+    width: 190px;
+    height: 480px;
+    float: left;
+    background-color: #6e6568;
+}
+
+ul.cate_menu{
+    padding: 15px 0;
+    height: 450px;
+
+}
+
+li{
+    overflow: hidden;
+    position: relative;
+    list-style: none;
+    padding-left: 12px;
+    line-height: 30px;
+    z-index: 1;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #666;
+}
+
+.cate_menu a{
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    padding:0 4px ;
+}
+.cate_menu li a:hover{
+    color: red
+}
+
+.cate_part{
+    position: absolute;
+    left: 190px;
+    top: 0;
+    min-height: 478px;
+    width: 800px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    background-color: #f7f7f7;
+    display: none;
+    transition: top 0.25s ease;
+    padding: 20px 0 10px;
+}
+
+
+.cate_part.coll{
+    float: left;
+    width: 800px;
+}
+
+.cate_channel{
+    overflow: hidden;
+    padding-left: 20px;
+    height: 24px;
+}
+
+.cate_channel_lk{
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px;
+    height: 24px;
+    background-color: #6e6568;
+    line-height: 24px;
+    color: #fff;
+}
+.cate_channel_lk:hover{
+    background-color:#5c5251
+}
+
+.cate_channel_lk i{
+    font-family: Verdana;
+    padding: 0 5px 0 10px;
+}
+
+.cate_detail{
+
+    padding: 10px 0 0 20px;
+}
+
+.cate_detail_item{
+    position: relative;
+    padding-left: 80px;
+}
+
+.cate_detail_item a:hover{
+    color: red;
+}
+
+.cate_detail_tit{
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 70px;
+    text-align: right;
+    font-weight: 700;
+}
+
+.cate_detail_tit i{
+    font-family: Verdana;
+    margin-left: 7px;
+}
+
+.cate_detail_item1 .cate_detail_con{
+    border-top: none;
+}
+
+.cate_detail_con{
+    position: relative;
+    padding: 6px 0;
+    min-height: 24px;
+    border-top: 1px solid #eee;
+}
+
+.cate_detail_con_lk{
+    float: left;
+    margin: 4px 0;
+    padding: 0 10px;
+    line-height: 16px;
+    border-left: 1px solid #e0e0e0;
+}
+
+.cate_part{
+    padding: 20px;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>仿京东左侧导航栏</title>
+  <script src="framework/js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/nav-left-menu.css">
+</head>
+<body>
+<nav>
+  <div class="J_cate">
+    <ul class="cate_menu">
+      <li><a href="#">家用电器</a></li>
+      <li><a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a></li>
+      <li><a href="#">电脑办公</a></li>
+      <li><a href="#">家居</a>/<a href="#">家具</a>/<a href="#">家装</a>/<a href="#">厨具</a></li>
+      <li><a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a></li>
+      <li><a href="#">个护化妆</a>/<a href="#">清洁用品</a>/<a href="#">宠物</a></li>
+      <li><a href="#">鞋靴</a>/<a href="#">箱包</a>/<a href="#">珠宝</a>/<a href="#">奢侈品</a></li>
+      <li><a href="#">运动</a>/<a href="#">户外</a>/<a href="#">钟表</a></li>
+      <li><a href="#">汽车</a>/<a href="#">汽车用品</a></li>
+      <li><a href="#">母婴</a>/<a href="#">玩具乐器</a></li>
+      <li><a href="#">食品</a>/<a href="#">酒类</a>/<a href="#">生鲜</a>/<a href="#">特产</a></li>
+      <li><a href="#">医药保健</a></li>
+      <li><a href="#">图书</a>/<a href="#">音像</a>/<a href="#">电子书</a></li>
+      <li><a href="#">机票</a>/<a href="#">酒店</a>/<a href="#">旅游</a>/<a href="#">生活</a></li>
+      <li><a href="#">理财</a>/<a href="#">众筹</a>/<a href="#">白条</a>/<a href="#">保险</a></li>
+    </ul>
+    <div class="cate_pop">
+      <div class="cate_part">
+        <div class="cate_part_coll">
+          <div class="cate_channel">
+            <a class="cate_channel_lk" href="#">家电城<i>&gt</i></a>
+            <a class="cate_channel_lk" href="#">品牌日<i>&gt</i></a>
+            <a class="cate_channel_lk" href="#">智能生活馆<i>&gt</i></a>
+            <a class="cate_channel_lk" href="#">京东净化馆<i>&gt</i></a>
+            <a class="cate_channel_lk" href="#">京东帮服务店<i>&gt</i></a>
+            <a class="cate_channel_lk" href="#">家电众筹馆<i>&gt</i></a>
+          </div>
+          <div class="cate_detail">
+            <dl class="cate_detail_item cate_detail_item1">
+              <dt class="cate_detail_tit">
+                <a href="#">电视<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">合资品牌</a>
+                <a class="cate_detail_con_lk" href="#">国产品牌</a>
+                <a class="cate_detail_con_lk" href="#">互联网品牌</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">空调<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">壁挂式空调</a>
+                <a class="cate_detail_con_lk" href="#">柜式空调</a>
+                <a class="cate_detail_con_lk" href="#">中央空调</a>
+                <a class="cate_detail_con_lk" href="#">空调配件</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">洗衣机<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">滚筒洗衣机</a>
+                <a class="cate_detail_con_lk" href="#">洗烘一体机</a>
+                <a class="cate_detail_con_lk" href="#">波轮洗衣机</a>
+                <a class="cate_detail_con_lk" href="#">迷你洗衣机</a>
+                <a class="cate_detail_con_lk" href="#">洗衣机配件</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">冰箱<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">多门</a>
+                <a class="cate_detail_con_lk" href="#">对开门</a>
+                <a class="cate_detail_con_lk" href="#">三门</a>
+                <a class="cate_detail_con_lk" href="#">双门</a>
+                <a class="cate_detail_con_lk" href="#">冷柜/冰吧</a>
+                <a class="cate_detail_con_lk" href="#">酒柜</a>
+                <a class="cate_detail_con_lk" href="#">冰箱配件</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">厨卫大电<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">油烟机</a>
+                <a class="cate_detail_con_lk" href="#">燃气灶</a>
+                <a class="cate_detail_con_lk" href="#">烟灶套装</a>
+                <a class="cate_detail_con_lk" href="#">消毒柜</a>
+                <a class="cate_detail_con_lk" href="#">洗碗机</a>
+                <a class="cate_detail_con_lk" href="#">电热水器</a>
+                <a class="cate_detail_con_lk" href="#">燃气热水器</a>
+                <a class="cate_detail_con_lk" href="#">嵌入式厨电</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">厨房小电<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">电饭煲</a>
+                <a class="cate_detail_con_lk" href="#">微波炉</a>
+                <a class="cate_detail_con_lk" href="#">电烤箱</a>
+                <a class="cate_detail_con_lk" href="#">电磁炉</a>
+                <a class="cate_detail_con_lk" href="#">电压力机</a>
+                <a class="cate_detail_con_lk" href="#">豆浆机</a>
+                <a class="cate_detail_con_lk" href="#">咖啡机</a>
+                <a class="cate_detail_con_lk" href="#">面包机</a>
+                <a class="cate_detail_con_lk" href="#">榨汁机</a>
+                <a class="cate_detail_con_lk" href="#">料理机</a>
+                <a class="cate_detail_con_lk" href="#">电饼铛</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">生活电器<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">取暖电器</a>
+                <a class="cate_detail_con_lk" href="#">吸尘器</a>
+                <a class="cate_detail_con_lk" href="#">净化器</a>
+                <a class="cate_detail_con_lk" href="#">扫地机器人</a>
+                <a class="cate_detail_con_lk" href="#">加湿器</a>
+                <a class="cate_detail_con_lk" href="#">挂烫器/熨斗</a>
+                <a class="cate_detail_con_lk" href="#">电风扇</a>
+                <a class="cate_detail_con_lk" href="#">冷风扇</a>
+                <a class="cate_detail_con_lk" href="#">插座</a>
+                <a class="cate_detail_con_lk" href="#">电话机</a>
+                <a class="cate_detail_con_lk" href="#">饮水机</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+            <dt class="cate_detail_tit">
+              <a href="#">个护健康<i>&gt</i></a>
+            </dt>
+            <dd class="cate_detail_con">
+              <a class="cate_detail_con_lk" href="#">剃须刀</a>
+              <a class="cate_detail_con_lk" href="#">口腔护理</a>
+              <a class="cate_detail_con_lk" href="#">电吹风</a>
+              <a class="cate_detail_con_lk" href="#">美容器</a>
+              <a class="cate_detail_con_lk" href="#">卷/直发器</a>
+              <a class="cate_detail_con_lk" href="#">理发器</a>
+              <a class="cate_detail_con_lk" href="#">剃/脱毛器</a>
+              <a class="cate_detail_con_lk" href="#">足浴盆</a>
+              <a class="cate_detail_con_lk" href="#">健康秤/厨房秤</a>
+              <a class="cate_detail_con_lk" href="#">按摩椅</a>
+            </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">家庭影音<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">家庭影院</a>
+                <a class="cate_detail_con_lk" href="#">迷你音响</a>
+                <a class="cate_detail_con_lk" href="#">DVD</a>
+                <a class="cate_detail_con_lk" href="#">电视影音配件</a>
+              </dd>
+            </dl>
+            <dl class="cate_detail_item">
+              <dt class="cate_detail_tit">
+                <a href="#">进口电器<i>&gt</i></a>
+              </dt>
+              <dd class="cate_detail_con">
+                <a class="cate_detail_con_lk" href="#">进口电器</a>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">2</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">3</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">4</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">5</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">6</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">7</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">8</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">9</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">10</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">11</a></p>
+      </div>
+      <div class="cate_part">
+      <p><a href="http://www.baidu.com" target="_blank">12</a></p>
+    </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">13</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">14</a></p>
+      </div>
+      <div class="cate_part">
+        <p><a href="http://www.baidu.com" target="_blank">15</a></p>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $(document).ready(function () {
+    $(".cate_menu li").each(function (index) {
+      $(this).mouseover(function () {
+        $(this).css({"backgroundColor":"#999395"});
+        $(".cate_pop > div:eq("+index+")").show();
+      }).mouseout(function () {
+        $(".cate_part").hide();
+        $(this).css({"backgroundColor":"#6e6568"})
+      });
+    });
+    $(".cate_pop .cate_part").each(function () {
+      $(this).mouseover(function () {
+        $(this).show();
+      }).mouseout(function () {
+        $(this).hide();
+      });
+    });
+  })
+</script>
+</body>
+</html>
