@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>手风琴效果</title>
+  <script src="framework/js/jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+  <div class="main">
+    <ul>
+      <li class="accor big">
+        <a class="accor">
+          <img src="img/accordion/accordion1.jpg">
+          <div class="accor_s">
+            <h3>时装团</h3>
+            <p>时尚秋装，清新小潮搭配</p>
+            <p><i><b>1</b>折起</i></p>
+            <p class="accor_s_p">进入专题抢购&nbsp&gt</p>
+          </div>
+          <i class="line"></i>
+          <i class="mask"></i>
+        </a>
+      </li>
+      <li class="accor">
+        <a>
+          <img src="img/accordion/accordion2.jpg">
+          <div class="accor_s">
+            <h3>钟表购</h3>
+            <p>瑞士进口机芯，品质至上</p>
+            <p><i><b>2.6</b>折起</i></p>
+            <p class="accor_s_p">进入专题抢购&nbsp&gt</p>
+          </div>
+          <i class="line"></i>
+          <i class="mask"></i>
+        </a>
+      </li>
+      <li class="accor">
+        <a>
+          <img src="img/accordion/accordion3.jpg">
+          <div class="accor_s">
+            <h3>鞋靴团</h3>
+            <p>上等头层小牛皮，等你来拿</p>
+            <p><i><b>1</b>折起</i></p>
+            <p class="accor_s_p">进入专题抢购&nbsp&gt</p>
+          </div>
+          <i class="line"></i>
+          <i class="mask"></i>
+        </a>
+      </li>
+      <li class="accor">
+        <a>
+          <img src="img/accordion/accordion4.jpg">
+          <div class="accor_s">
+            <h3>Baby购</h3>
+            <p>宝宝该换装了，新品抢购</p>
+            <p><i><b>2.5</b>折起</i></p>
+            <p class="accor_s_p">进入专题抢购&nbsp&gt</p>
+          </div>
+          <i class="line"></i>
+          <i class="mask"></i>
+        </a>
+      </li>
+      <li class="accor">
+        <a>
+          <img src="img/accordion/accordion5.jpg">
+          <div class="accor_s">
+            <h3>聚新鲜</h3>
+            <p>优质生鲜水果极速达</p>
+            <p><i><b>5</b>折起</i></p>
+            <p class="accor_s_p">进入专题抢购&nbsp&gt</p>
+          </div>
+          <i class="mask"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+<script>
+  $(document).ready(function () {
+    $("li.accor").mouseover(function () {
+      $(this).siblings(".big").removeClass("big");
+      $(this).addClass("big");
+
+    })
+  })
+</script>
+</body>
+</html>

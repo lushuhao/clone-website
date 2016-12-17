@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+a{
+    text-decoration: none
+}
+
+li{
+    list-style: none
+}
+
+div.main{
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 880px;
+    height: 128px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+li.accor{
+    float: left;
+    overflow: hidden;
+
+}
+
+li.accor a{
+    display: block;
+    position: relative;
+    width: 156px;
+    height: 128px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+li.accor img{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    height: 75px;
+    width: 100px;
+    overflow: hidden;
+}
+
+li.accor a div.accor_s{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 10px;
+}
+
+div.accor_s h3{
+    color: #fa2a5d;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+div.accor_s p{
+    color: #888;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    width: 136px;
+    overflow: hidden;
+}
+
+div.accor_s p i{
+    font-size: 14px;
+    color: #fa2a5d;
+}
+
+div.accor_s p b{
+    font-size: 16px;
+}
+
+div.accor_s p.accor_s_p{
+    color: #fa2a5d;
+    padding-top: 5px;
+    opacity: 0;
+}
+
+i.line{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 156px;
+    border: 1px dashed #cacaca;
+}
+
+
+i.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 128px;
+    width: 156px;
+    opacity: 0;
+    background-color: #000;
+}
+
+div.main:hover i.mask{
+    opacity: 0.15;
+}
+
+div.main ul a *{
+    transition: all ease 0.35s ;
+}
+
+/*-------------------mouseover-----------------------------*/
+
+.main li.big, li.big a{
+    width: 256px;
+}
+
+.main li.big img{
+    width: 160px;
+    height: 120px;
+    right: 0;
+}
+
+.main li.big div.accor_s{
+    width: 230px;
+}
+
+.main li.big h3{
+    font-size: 18px;
+}
+
+.main li.big p{
+    font-size: 14px;
+    padding-bottom: 7px;
+    width: 180px;
+}
+
+.main li.big p.accor_s_p{
+    opacity: 1;
+}
+
+.main li.big b{
+    font-size: 22px;
+}
+
+.main li.big i{
+    font-size: 16px;
+}
+
+.main li.big i.mask{
+    width: 256px;
+}
+
+.main li.big a:hover .mask{
+    opacity: 0;
+}
