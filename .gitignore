@@ -3,3 +3,9 @@
 .idea
 test.html
 
+# CSS£º
+.scss
+.scss.map
+css/*.css.map
+test.*
+
