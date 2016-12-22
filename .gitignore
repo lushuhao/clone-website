@@ -1,11 +1,13 @@
 
 # HTML:
 .idea
-test.html
+test.*
+.sass-cache
 
 # CSS£º
 .scss
 .scss.map
-css/*.css.map
-test.*
-
+css/stylesheets/*.css.map
+css/config.rb
+css/sass/*
+.css.map
