@@ -97,6 +97,9 @@ a{
     padding: 0 5px 0 10px;
 }
 
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+
 .cate_detail{
 
     padding: 10px 0 0 20px;
@@ -130,7 +133,7 @@ a{
 }
 
 .cate_detail_con{
-    position: relative;
+
     padding: 6px 0;
     min-height: 24px;
     border-top: 1px solid #eee;
