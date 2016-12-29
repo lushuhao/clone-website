@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>放大镜效果</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      background-color: #f5f5f5;
+    }
+
+    #demo{
+      display: block;
+      width: 400px;
+      height: 255px;
+      margin: 50px;
+      position: relative;
+      border: 1px solid #ccc;
+    }
+
+    #small-box{
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    #float-box{
+      width: 160px;
+      height: 120px;
+      position: absolute;
+      background: #ffffcc;
+      border: 1px solid #ccc;
+      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+      opacity: 0.5;
+      cursor: move;
+      display: none;
+    }
+
+    #big-box{
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 460px;
+      width: 400px;
+      height: 300px;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      z-index: 1;
+    }
+
+    #big-box img{
+      position: absolute;
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+<section id="demo">
+  <article id="small-box">
+    <div id="float-box"></div>
+    <img src="img/glass/macbook-small.jpg" />
+  </article>
+  <aside id="big-box">
+    <img src="img/glass/macbook-big.jpg">
+  </aside>
+</section>
+
+
+<script>
+  window.onload = function () {
+    var objDemo = document.getElementById("demo");
+    var objSmallBox = document.getElementById("small-box");
+    var objFloatBox = document.getElementById("float-box");
+    var objBigBox = document.getElementById("big-box");
+    var objBigBoxImage = objBigBox.getElementsByTagName("img")[0]; //取出big-img
+
+    objSmallBox.onmouseover = function () {
+      objFloatBox.style.display = "block";
+      objBigBox.style.display = "block";
+    };
+
+    objSmallBox.onmouseout = function () {
+      objFloatBox.style.display = "none";
+      objBigBox.style.display = "none";
+    };
+
+    objSmallBox.onmousemove = function (ev) {
+
+      var _event = ev;
+
+      var left = _event.clientX - objDemo.offsetLeft - objSmallBox.offsetLeft - objFloatBox.offsetWidth/2;
+      var top = _event.clientY - objDemo.offsetTop - objSmallBox.offsetTop -objFloatBox.offsetHeight/2;
+
+      if (left < 0){
+        left = 0;
+      }else if (left > (objSmallBox.offsetWidth - objFloatBox.offsetWidth)){
+        left = objSmallBox.offsetWidth - objFloatBox.offsetWidth;
+      }
+
+      if (top < 0){
+        top = 0;
+      }else if (top > (objSmallBox.offsetHeight - objFloatBox.offsetHeight - 3 )){
+        top = objSmallBox.offsetHeight - objFloatBox.offsetHeight - 3;
+      }
+
+
+      objFloatBox.style.left = left + "px";
+      objFloatBox.style.top = top + "px";
+
+      // big-img 与 small-img 移动是同步的，且反向，移动距离成比例与自身宽高有关
+      var percentX = left / objSmallBox.offsetWidth;
+      var percentY = top / objSmallBox.offsetHeight;
+
+      objBigBoxImage.style.left = -percentX * objBigBoxImage.offsetWidth + "px"
+      objBigBoxImage.style.top = -percentY * objBigBoxImage.offsetHeight + "px"
+    }
+  }
+</script>
+</body>
+</html>
