@@ -84,15 +84,18 @@ ul {
 #navsecond {
     float: left;
     margin-bottom: 12px;
-    padding-top: 8px;
     width: 180px;
+    height: 1000px;
     background-color: #efefef;
+}
+
+#navsecond .nav_second-padding{
+    padding-top: 10px;
 }
 
 #navsecond h2, #sidebar h2 {
     font-size: 14px;
     font-weight: 900;
-
     margin: 6px 0 0 12px;
 }
 
@@ -181,10 +184,15 @@ ul {
 }
     /*--------------------------sidebar-----------------------------------*/
 #sidebar {
-    padding: 16px 0 10px 0;
+
     float: right;
     width: 180px;
+    height: 1000px;
     background-color: #efefef;
+}
+
+#search {
+    padding-top: 16px;
 }
 
 #sidebar h2 {
