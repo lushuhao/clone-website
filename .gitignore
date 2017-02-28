@@ -6,8 +6,8 @@ test.*
 
 # CSS£º
 .scss
-.scss.map
+*.scss.map
 css/stylesheets/*.css.map
 css/config.rb
 css/sass/*
-.css.map
+*.css.map

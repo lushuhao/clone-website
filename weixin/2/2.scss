@@ -1,0 +1,65 @@
+@import "../static/css/mixin";
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  @include px2rem(top, 100);
+  @include px2rem(right, 66);
+
+  .header-content {
+    @include px2rem(line-height, 58);
+    text-align: center;
+    @include font-dpr(24px);
+    color: #f8e2b9;
+    @include px2rem(letter-spacing, 2);
+  }
+}
+
+.section {
+  position: absolute;
+  top: 47%;
+  transform: translateY(-50%);
+  @include px2rem(left, 110);
+
+  .num {
+    @include font-dpr(78px);
+    font-family: "Microsoft Sans Serif";
+    color: #fde9c5;
+  }
+}
+
+.footer {
+  position: absolute;
+  @include px2rem(bottom, 52);
+  @include px2rem(left, 60);
+
+  .awart {
+    display: inline-block;
+    @include bg-image('awart');
+    @include px2rem(background-size, 190);
+    @include px2rem(height, 200);
+    @include px2rem(width, 200);
+    background-repeat: no-repeat;
+  }
+
+  .footer-content {
+    position: absolute;
+    @include px2rem(bottom, 35);
+    @include px2rem(left, 210);
+    @include font-dpr(28px);
+    color: #edcc8f;
+  }
+}
