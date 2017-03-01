@@ -1,0 +1,33 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei UI";
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.section {
+  position: absolute;
+  bottom: 0.4rem;
+  left: -0.26667rem;
+  font-size: 18px;
+  color: #b55923;
+  width: 125%;
+  transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.8);
+}
+[data-dpr="2"] .section {
+  font-size: 36px;
+}
+[data-dpr="3"] .section {
+  font-size: 54px;
+}
+
+/*# sourceMappingURL=4.css.map */

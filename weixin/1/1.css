@@ -1,6 +1,7 @@
 body {
   width: 100%;
   height: 100%;
+  font-family: "Microsoft YaHei UI";
 }
 
 .bg {
@@ -48,7 +49,6 @@ body {
   color: #fde201;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Microsoft YaHei UI";
 }
 [data-dpr="2"] .wrapper .bubble .content-wrapper .content {
   font-size: 36px;
@@ -62,7 +62,6 @@ body {
   color: #ffa800;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Microsoft YaHei UI";
 }
 [data-dpr="2"] .wrapper .footer .footer-content .f-content {
   font-size: 36px;
@@ -77,7 +76,6 @@ body {
   position: absolute;
   bottom: 0.26667rem;
   left: 1.6rem;
-  font-family: "Microsoft YaHei UI Light";
 }
 .footer-advert .left {
   height: 2rem;
@@ -101,7 +99,7 @@ body {
   letter-spacing: 0.05333rem;
 }
 .footer-advert .left .content-wrapper p {
-  font-weight: 900;
+  font-weight: 500;
 }
 .footer-advert .right {
   padding-left: 0.32rem;
@@ -109,7 +107,7 @@ body {
 }
 .footer-advert .right .content-top {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 500;
 }
 [data-dpr="2"] .footer-advert .right .content-top {
   font-size: 64px;
@@ -119,7 +117,7 @@ body {
 }
 .footer-advert .right .content-bottom {
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 500;
 }
 [data-dpr="2"] .footer-advert .right .content-bottom {
   font-size: 56px;

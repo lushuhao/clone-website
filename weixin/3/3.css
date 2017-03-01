@@ -1,0 +1,129 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei UI";
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  position: absolute;
+  top: 45%;
+  left: 2.26667rem;
+  text-align: center;
+}
+.header .title {
+  position: relative;
+  padding: 0.4rem;
+  font-size: 26px;
+  color: #9f5400;
+  z-index: 20;
+  background-color: #fae7cd;
+  transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.8);
+}
+[data-dpr="2"] .header .title {
+  font-size: 52px;
+}
+[data-dpr="3"] .header .title {
+  font-size: 78px;
+}
+
+.section {
+  position: absolute;
+  top: 55%;
+  left: 13%;
+}
+.section .point {
+  color: #9f5400;
+}
+.section .s-article {
+  position: relative;
+  width: 7.33333rem;
+  height: 1.73333rem;
+  border: 3px solid #9f5400;
+  margin-top: -0.66667rem;
+  z-index: 1;
+}
+.section .s-article .content {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: -14%;
+  right: 0;
+  width: 130%;
+  transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.8);
+  height: 0.53333rem;
+  padding-left: 0.13333rem;
+  font-size: 20px;
+  text-align: center;
+  color: #bd7f38;
+}
+[data-dpr="2"] .section .s-article .content {
+  font-size: 40px;
+}
+[data-dpr="3"] .section .s-article .content {
+  font-size: 60px;
+}
+.section .s-footer {
+  padding-top: 0.4rem;
+  line-height: 0.74667rem;
+  font-size: 20px;
+}
+[data-dpr="2"] .section .s-footer {
+  font-size: 40px;
+}
+[data-dpr="3"] .section .s-footer {
+  font-size: 60px;
+}
+.section .s-footer .title {
+  text-align: center;
+  color: #bd7f38;
+  transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.8);
+}
+.section .s-footer .number {
+  padding-left: 2.26667rem;
+  color: #9f5400;
+  width: 130%;
+  transform: scaleX(0.8);
+  -webkit-transform: scaleX(0.8);
+}
+
+.footer {
+  position: absolute;
+  top: 80%;
+  left: 8%;
+}
+.footer .f-header {
+  font-size: 22px;
+  line-height: 1.8;
+}
+[data-dpr="2"] .footer .f-header {
+  font-size: 44px;
+}
+[data-dpr="3"] .footer .f-header {
+  font-size: 66px;
+}
+.footer .f-section {
+  padding-left: 1.06667rem;
+  font-size: 14px;
+  line-height: 1.8;
+}
+[data-dpr="2"] .footer .f-section {
+  font-size: 28px;
+}
+[data-dpr="3"] .footer .f-section {
+  font-size: 42px;
+}
+
+/*# sourceMappingURL=3.css.map */
