@@ -658,7 +658,6 @@ module.exports = E;
          */
         function Clipboard(trigger, options) {
             _classCallCheck(this, Clipboard);
-
             var _this = _possibleConstructorReturn(this, (Clipboard.__proto__ || Object.getPrototypeOf(Clipboard)).call(this));
 
             _this.resolveOptions(options);

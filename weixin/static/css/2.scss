@@ -1,0 +1,98 @@
+@import "../../common/css/mixin";
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family:"Microsoft YaHei UI";
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  @include px2rem(padding-top, 48);
+  @include px2rem(padding-left, 78);
+
+  .aside{
+    display: inline-block;
+    @include bg-image('../img/promise');
+    @include px2rem(width, 156);
+    @include px2rem(height, 156);
+    background-repeat: no-repeat;
+    @include px2rem(background-size, 156);
+  }
+  .content-wrapper{
+    @include px2rem(padding-left, 40);
+    .header-content {
+      @include px2rem(line-height, 58);
+      text-align: center;
+      @include font-dpr(24px);
+      color: #f8e2b9;
+      @include px2rem(letter-spacing, 2);
+    }
+  }
+}
+
+.section {
+  text-align: center;
+  .picture {
+    display: inline-block;
+    @include bg-image('../img/triangle');
+    @include px2rem(width, 724);
+    @include px2rem(height, 606);
+    background-repeat: no-repeat;
+    @include px2rem(background-size, 724);
+  }
+  //.num {
+  //  @include font-dpr(78px);
+  //  font-family: "Microsoft Sans Serif";
+  //  color: #fde9c5;
+  //}
+}
+
+.footer {
+  display: flex;
+  @include px2rem(padding-left, 60);
+  @include px2rem(padding-top, 40);
+  position: -webkit-sticky;
+  position: sticky;
+  @include px2rem(bottom, 5);
+
+
+  .awart {
+    display: inline-block;
+    @include bg-image('../img/awart');
+    @include px2rem(background-size, 190);
+    @include px2rem(height, 200);
+    @include px2rem(width, 200);
+    background-repeat: no-repeat;
+  }
+  .content-wrapper{
+    @include px2rem(padding-left, 20);
+    @include px2rem(padding-top, 20);
+
+    .picture-wrapper{
+      @include px2rem(padding-bottom, 10);
+
+      .picture{
+        display: inline-block;
+        @include bg-image('../img/add');
+        @include px2rem(background-size, 276);
+        @include px2rem(height, 48);
+        @include px2rem(width, 276);
+        background-repeat: no-repeat;
+      }
+    }
+    .footer-content {
+      @include font-dpr(28px);
+      color: #edcc8f;
+    }
+  }
+}

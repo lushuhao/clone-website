@@ -1,0 +1,132 @@
+@import "../../common/css/mixin";
+
+body {
+  font-family: "Microsoft YaHei UI";
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header {
+  .top {
+    display: inline-block;
+    @include bg-image('../img/red');
+    @include px2rem(width, 275);
+    @include px2rem(height, 120);
+    background-repeat: no-repeat;
+    @include px2rem(background-size, 275);
+  }
+}
+
+.section {
+  text-align: center;
+  @include px2rem(padding-top, 0);
+  .picture {
+    display: inline-block;
+    @include bg-image('../img/yellow');
+    @include px2rem(width, 667);
+    @include px2rem(height, 356);
+    background-repeat: no-repeat;
+    @include px2rem(background-size, 667);
+    transform: scaleY(0.7);
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  @include px2rem(padding-top, 20);
+  @include px2rem(padding-left, 28);
+  @include px2rem(padding-right, 28);
+  position: -webkit-sticky;
+  position: sticky;
+  @include px2rem(bottom, 180);
+
+
+  .bubble {
+    @include bg-image('../img/bubble');
+    @include px2rem(background-size, 210);
+    background-repeat: no-repeat;
+    @include px2rem(width, 210);
+    @include px2rem(height, 210);
+
+    .content-wrapper {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .content {
+        @include px2rem(line-height, 60);
+        text-align: center;
+        color: #fde201;
+        @include font-dpr(16px);
+        @include px2rem(letter-spacing, 1);
+      }
+    }
+  }
+
+  .footer {
+    .footer-content {
+      .f-content {
+        @include px2rem(line-height, 70);
+        text-align: center;
+        color: #ffa800;
+        @include font-dpr(18px);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.footer-advert {
+  display: flex;
+  justify-content: flex-start;
+  @include px2rem(padding-left, 115);
+  @include px2rem(padding-top, 50);
+  position: -webkit-sticky;
+  position: sticky;
+  @include px2rem(bottom, 5);
+
+  .left {
+    background-color: #ff7e00;
+    @include font-dpr(28px);
+    text-align: center;
+
+    .content-wrapper {
+      @include px2rem(padding, 20);
+      color: white;
+      @include px2rem(letter-spacing, 4);
+
+      .content {
+        font-weight: 500;
+
+        &:first-child{
+          @include px2rem(padding-bottom, 10);
+        }
+      }
+    }
+  }
+
+  .right {
+    width:60%;
+    @include px2rem(padding-left, 24);
+    line-height: 1.1;
+
+    .content-top {
+      @include font-dpr(32px);
+      font-weight: 500;
+    }
+    .content-bottom {
+      @include font-dpr(24px);
+      font-weight: 500;
+    }
+  }
+}
+
+
