@@ -1,4 +1,4 @@
 DIV+CSS+JavaScript+jQuery
 
 weixin文件夹是手机自适应屏幕
-使用淘宝开源库+sass的mixin
+使用淘宝开源库lib-flexible+zepto的ajax+clibboard来点击复制+sass的mixin
